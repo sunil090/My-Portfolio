@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <!-- <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    /> -->
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/Sunil.png"
+              alt="sunil kumar"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Sunil Kumar">Sunil Kumar</h1>
+
+            <p class="title">Full Stack Developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:kumarsunil51140@gmail.com" class="contact-link"
+                  >kumarsunil51140@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+12133522795" class="contact-link"
+                  >+91 7986376507</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">June 01, 1999</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Amritsar, Punjab, INDIA</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://github.com/sunil090" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/sunil-kumar-261508242/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-leetcode"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I’m Sunil Kumar, a skilled Software Engineer from India with expertise in web and mobile application development.
+               I specialize in creating intuitive and high-performance solutions using 
+              technologies such as HTML, CSS, Tailwind CSS, Bootstrap, Core JavaScript, ReactJS, React Native, Node.js, and MongoDB.
+            </p>
+
+            <p>
+              With strong experience in backend development and database management, 
+              I focus on delivering scalable, efficient, and visually appealing applications. 
+              My passion for problem-solving and collaboration enables me to adapt to 
+              diverse projects and consistently exceed expectations.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <!-- Web Development -->
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-dev.svg" alt="Web Development icon" width="40" />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web Development</h4>
+                  <p class="service-item-text">
+                    Creating modern, responsive, and user-friendly websites using React, Next.js, and TailwindCSS.
+                  </p>
+                </div>
+              </li>
+            
+              <!-- Backend Development -->
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-api.svg" alt="Backend Development icon" width="40" />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Backend Development</h4>
+                  <p class="service-item-text">
+                    Building scalable and secure backend systems using Node.js, Express.js, and FastAPI.
+                  </p>
+                </div>
+              </li>
+            
+              <!-- API Development & Integration -->
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/logo.svg" alt="API Development icon" width="40" />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">API Development & Integration</h4>
+                  <p class="service-item-text">
+                    Creating and integrating RESTful & GraphQL APIs to connect frontend and backend seamlessly.
+                  </p>
+                </div>
+              </li>
+            
+             <!-- Mobile App Development -->
+<li class="service-item">
+  <div class="service-icon-box">
+    <img src="./assets/images/icon-app.svg" alt="Mobile App Development icon" width="40" />
+  </div>
+  <div class="service-content-box">
+    <h4 class="h4 service-item-title">Mobile App Development</h4>
+    <p class="service-item-text">
+      Building high-performance mobile applications using React Native and Flutter.
+    </p>
+  </div>
+</li>
+
+            </ul>
+            
+          </section>
+
+          <!--
+          - testimonials
+        -->
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/gurpreet_avatar1 (2).png"
+                      alt="Gurpreet Singh"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Gurpreet Singh
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      I've known Sunil since college, and our shared interest
+                      in the same tech stack has made our bond strong. He's
+                      really great at multitasking. He's dedicated to his work
+                      and always aims for excellent results. Sunil also thinks
+                      creatively and is open to new solutions. Our talks about
+                      new technologies and work improvements are always
+                      interesting and enriching. He's good at solving problems
+                      and working well in a team. Wishing him good luck for the
+                      future.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/sanjay kumar.png"
+                      alt="Sanjay Kumar"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                   Sanjay Kumar
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      I have worked with Sunil. He is a good team member and is really good at what he does. He has a solid coding skills and a good grasp of various technologies.
+Keep rocking, Sunil
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time class="modal-date">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    Testimonial
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header class="resume-title-wrapper">
+            <h2 class="h2 article-title">Resume</h2>
+            <a class="icon-box-resume" href="https://docs.google.com/document/d/1NamsMtHyHj9amVvIQQHcB3M2KZVAxAyX2yX47YwtQ6g/view" download>
+              <ion-icon name="arrow-down-circle-outline" title="Download Resume"></ion-icon>
+            </a>
+            
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  BTech in Computer Science
+                </h4>
+
+                <span>Aug 2019 — Aug 2023</span>
+
+                <p class="timeline-text">Amritsar Groups of Colleges</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Senior Secondary (+2) in Science
+                </h4>
+
+                <span>March 2019</span>
+
+                <p class="timeline-text">Sri Guru Harkrishan International Schoo</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Matriculation</h4>
+
+                <span>March 2017</span>
+
+                <p class="timeline-text">Sri Guru Harkrishan International Schoo</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Full Stack Developer Intern (Future Finders Organisation)
+                </h4>
+                <span>Jan 2023 — May 2023</span>
+                <p class="timeline-text">
+                  "Completed a 6-month internship as a Full Stack Developer at Future Finders Organisation, where I designed, developed, and deployed end-to-end web and software solutions. 
+                  Gained practical experience in web development and software engineering by collaborating with teams to deliver impactful web solutions."
+                </p>
+              </li>
+              
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  FullStack Developer ( NTF )
+                </h4>
+
+                <span>Jan 2025 — Present</span>
+
+                <p class="timeline-text">
+                  Currently serving as an FullStack Developer at NTF,
+                  contributing to the development and maintenance of web
+                  applications and systems. Engaging in collaborative
+                  problem-solving and innovation.
+                </p>
+              </li>
+
+           
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My Skills</h3>
+
+            <section class="about-text">
+              <p>
+                "Completing a degree in Computer Science is widely regarded as one of the most challenging academic achievements. Through my academic journey and my passion for computer science, I have gained expertise in various technologies and honed my skills across multiple domains in the field."
+              </p>
+  
+            </section>
+
+            <ol class="skill-list">
+
+              <li class="skill-item">
+                <h4 class="h4 skill-item-title">
+                  Adaptability : 
+                </h4>
+  
+                <p class="skill-text">
+                  I can learn and adapt any langauge/technology in very less time.
+                </p>
+              </li>
+              <li class="skill-item">
+                <h4 class="h4 skill-item-title">
+                  Programming languages : 
+                </h4>
+  
+                <p class="skill-text">
+                  C/C++, Java, JavaScript , Python(basics)
+                </p>
+              </li>
+              <li class="skill-item">
+                <h4 class="h4 skill-item-title">
+                  Scripting Language : 
+                </h4>
+  
+                <p class="skill-text">
+                  JQuery, JavaScript, Nodejs, Express.js, 
+                </p>
+              </li>
+              <li class="skill-item">
+                <h4 class="h4 skill-item-title">
+                  Markup And Styling :
+                </h4>
+  
+                <p class="skill-text">
+                  Html, Css, Sass , Material.ui , TailwindCss
+                </p>
+              </li>
+              <li class="skill-item">
+                <h4 class="h4 skill-item-title">
+                  Framework :
+                </h4>
+  
+                <p class="skill-text">
+                  Bootstrap , Tailwindcss Reactjs , React-Native , NextJs, REST 
+                </p>
+              </li>
+              <li class="skill-item">
+                <h4 class="h4 skill-item-title">
+                  Database :
+                </h4>
+  
+                <p class="skill-text">
+                  MongoDb, Sql , Firebase
+                </p>
+              </li>
+              <li class="skill-item">
+                <h4 class="h4 skill-item-title">
+                  Tools :
+                </h4>
+  
+                <p class="skill-text">
+                  GitHub , VsCode , Postman, Docker , Jest , ChatGPT
+                </p>
+              </li>
+              <li class="skill-item">
+                <h4 class="h4 skill-item-title">
+                  Others :
+                </h4>
+  
+                <p class="skill-text">
+                  Problem Solving | Teaching | DSA
+                </p>
+              </li>
+            </ol>
+
+
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">HTML</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">CSS</h5>
+                  <data value="65">65%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 65%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">JavaScript</h5>
+                  <data value="70">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Bootstrap</h5>
+                  <data value="75">75%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">TailwindCss</h5>
+                  <data value="75">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">ReactJs</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">ReactNative</h5>
+                  <data value="90">60%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+             
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">NodeJs</h5>
+                  <data value="60">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">MySQL</h5>
+                  <data value="60">60%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">MongoDB</h5>
+                  <data value="60">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+
+
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">ExpressJs</h5>
+                  <data value="70">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+             
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+      
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Web</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Crud</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Majors</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>NPM Package</button>
+            </li>
+          </ul>
+      
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-select-value>
+                Select category
+              </div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Crud</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Web</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Majors</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>NPM Package</button>
+              </li>
+            </ul>
+          </div>
+      
+        
+        </section>
+      </article>
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.8199232807747!2d74.8782932!3d31.6742795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391964aa569e7355%3A0x173ff8a224b5eef8!2sSpring+Dale+Senior+School!5e0!3m2!1sen!2sin!4v1675366799015!5m2!1sen!2sin"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+            
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="https://formspree.io/f/mwkzvddw" method="POST" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
